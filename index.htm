@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+      <meta name="apple-itunes-app" content="app-id=429849944"/>
+      <meta name="apple-touch-fullscreen" content="no" />
+      <meta content="telephone=no" name="format-detection" />
+      <meta name="apple-mobile-web-app-capable" content="no" />
+      <title>2017上海车展爱卡汽车邀请函</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script type="text/javascript">
+      (function(){
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/750;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+          var version = parseFloat(RegExp.$1);
+          // andriod 2.3
+          if(version>2.3){
+            document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            // andriod 2.3以上
+          }else{
+            document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+          }
+          // 其他系统
+        } else {
+          document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+      })()
+    </script>
+  </head>
+  <body>
+  <!--$--1001loading*内容--$-->
+  <script>
+  /* 预加载 */
+    var loading=$('<div />').css({'position':'fixed','top':'0px','width':'100%','height':'100%','z-index':100,'background':'#a0dde9','background-size':'100% 100%','text-align':'center','overflow':'hidden'}).html(' <div style="width:750px;height:200px;position:absolute; top:425px;background:url(images/loading.png) no-repeat center top;"><div style="width:392px;height:38px;margin:164px 0 0 185px;"><p class="loadbar" style="background-image: url(images/loading-l.png), url(images/loading-c.png);background-position: left top,left top;background-repeat: no-repeat , repeat-x;width:30%;height:38px;padding:0 17px 0 21px;box-sizing:border-box;background-origin:border-box,padding-box;position:relative"><img src="images/ld.png"><span style="display:block;position:absolute;right:0;top:0;width:17px;height:38px;background:url(images/loading-r.png) no-repeat right top;z-index:1"></span></p></div></div>');
+    
+    $('body').css({'background':'#a0dde9'}).append(loading); 
+    $('.loadbar').animate({width:"75%"},800);    
+    function loadImages(imgs,callback){ 
+      var loadCount=imgs.length;
+      var loadedCount=0;
+      var failLoad=0;
+      var timeout=10000;
+      var loadInterval=null;
+      
+      for(var i=0;i<loadCount;i++){
+        var img=new Image();
+        img.src=imgs[i];
+        img.onload=function(){
+          loadedCount++;
+          callback&&callback.processFn&&callback.processFn(loadedCount,loadCount);
+          if(callback&&callback.endFn){
+            callback&&callback.endFn&&callback.endFn(loadedCount,loadCount);
+            callback.endFn=null;
+          }
+        };        
+      }
+      setTimeout(function(){
+        for(var i=0;i<loadCount;i++){
+          img.onload=null;  
+        }
+        if(callback&&callback.endFn){
+          callback.endFn(loadedCount,loadCount);
+          callback.endFn=null;
+        } 
+      },timeout)
+    }
+
+    var imgs=[
+      'images/p1-bg.jpg',
+      'images/p1-1.png',
+      'images/p1-2.png',
+      'images/p1-3.png',
+      'images/p1-4.png',
+      'images/p1-5-1.png',
+      'images/p1-5-2.png',
+      'images/p1-6.png',
+      'images/p2-bg.jpg',
+      'images/p3-bg.jpg',
+      'images/p5-bg.jpg',
+      'images/p2-2.png',
+      'images/p4-house1.png',
+      'images/p4-house2.png',
+      'images/p4-house3.png',
+      'images/p3-map.png',
+      'images/p4-3.png',
+      'images/p5-4-1.png',
+      'images/p5-4-2.png',
+      'images/p5-4-3.png',
+      'images/p6-4.png',
+      'images/share-150x150.jpg',
+      'images/day.jpg',
+      'images/jz.png',
+      'images/round-logo.png'
+    ]
+    loadImages(imgs,{
+      endFn:function(lc,tc,fc){
+        setTimeout(function(){
+          $(".loadbar").animate({width:"99%"},300,function(){
+            loading.remove();
+          }); 
+          $('.content').css({'visibility':'visible'});
+          var swiper = new Swiper('.content', {
+                paginationClickable: true,
+                direction: 'vertical',
+                followFinger : false,
+                hashnav:true,
+            });
+            $(".arr-t").css('opacity',1);
+            $(".arr-t,.yqhbtn").click(function(){
+              var index = swiper.activeIndex;
+              swiper.slideTo(index+1);
+            })
+            $(".gotoindex").click(function(){
+               swiper.slideTo(0);
+            })
+            $(".page_1").bind({
+             'touchstart': function(){
+                audioMusic.play();
+               }
+            });
+        },500)
+      } 
+    }); 
+  </script>
+<!--$--1001loading*内容--$-->
+    <div class="swiper-container content" style="visibility:hidden;">
+      <div class="swiper-wrapper">
+        <!--$--1001*内容--$-->
+        <div class="swiper-slide page_1 " data-hash="slide1">
+          <div class="scalebox">
+            <span class="cloud-1"></span>
+            <span class="cloud-2"></span>
+             <div class="slogan">
+              <span></span>
+              <span></span>
+             </div> 
+             <div class="linkbox">
+              <span class="hand"></span>
+              <span class="yqhbtn"></span>
+             </div>
+             
+          </div>
+          <span class="city"></span>
+          <span class="road"></span>
+          <span class="car"></span>
+        </div>
+        <!--$--1001*内容--$-->
+        <!--$--1002*内容--$-->
+        <div class="swiper-slide page_2" data-hash="slide2">
+            <span class="cloud-1"></span>
+            <span class="cloud-2"></span>
+            <div>
+              <div class="contbox">
+                <p class="tit"><span></span></p>
+                <div class="text-box"><span></span></div>
+                <span class="round-logo"></span>
+                <span class="jizhe"><i></i></span>
+              </div>
+            </div>
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="plusign1"></span>
+            <span class="plusign2"></span>
+            <span class="plusign3"></span>
+            <span class="arr-t"></span>
+        </div>
+        <!--$--1002*内容--$-->
+        <!--$--1003*内容--$-->
+        <div class="swiper-slide page_3" data-hash="slide3">
+          <span class="cloud-1"></span>
+          <span class="cloud-2"></span>
+            <div>
+                <div class="contbox">
+                  <p class="tit"><span></span></p>
+                  <div class="text-box">
+                    <span class="map"></span>
+                    <a href="http://map.baidu.com/mobile/webapp/search/search/qt=s&wd=%E4%B8%8A%E6%B5%B7%E5%B8%82%E9%9D%92%E6%B5%A6%E5%8C%BA%E7%9B%88%E6%B8%AF%E4%B8%9C%E8%B7%AF168%E5%8F%B7&c=289&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&src=0/vt=map" class="btn-map"></a>
+                    <span class="ads"></span>
+                  </div>
+                  <span class="round-logo"></span>
+                  <span class="jizhe"><i></i></span>
+                </div>
+            </div>
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="plusign1"></span>
+            <span class="plusign2"></span>
+            <span class="plusign3"></span>
+            <span class="arr-t"></span>
+        </div>
+        <!--$--1003*内容--$-->
+        <!--$--1004*内容--$-->
+        <div class="swiper-slide page_4" data-hash="slide4">
+          <span class="cloud-1"></span>
+          <span class="cloud-2"></span>
+          <div>
+            <div class="contbox">
+                      <p class="tit"><span></span></p>
+                      <div class="text-box">
+                            <div class="housebox">
+                                <div class="swiper-container focusSwipe">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/p4-house1.png"></div>
+                                        <div class="swiper-slide"><img src="images/p4-house2.png"></div>
+                                        <div class="swiper-slide"><img src="images/p4-house3.png"></div>
+                                    </div> 
+                                </div> 
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                          </div>
+                          <span class="adrs"></span>
+
+                      </div>
+                      <span class="round-logo"></span>
+                      <span class="jizhe"><i></i></span>
+            </div>
+          </div>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="plusign1"></span>
+          <span class="plusign2"></span>
+          <span class="plusign3"></span>
+          <span class="arr-t"></span>
+        </div>
+        <!--$--1004*内容--$-->
+        <!--$--1005*内容--$-->
+        <div class="swiper-slide page_5" data-hash="slide5">
+          <span class="cloud-1"></span>
+          <span class="cloud-2"></span>
+          <div>
+            <div class="contbox">
+                  <p class="tit"><span></span></p>
+                  <div class="text-box"><span></span><span></span><span></span></div>
+                  <span class="round-logo"></span>
+                  <span class="jizhe"><i></i></span>
+            </div>
+          </div>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="plusign1"></span>
+          <span class="plusign2"></span>
+          <span class="plusign3"></span>
+          <span class="arr-t"></span>
+        </div>
+        <!--$--1005*内容--$-->
+        <!--$--1006*内容--$-->
+        <div class="swiper-slide page_6" data-hash="slide6">
+            <span class="cloud-1"></span>
+            <span class="cloud-2"></span>
+            <div>
+                <div class="contbox">
+                    <p class="tit"><span></span></p>
+                    <div class="text-box">
+                        <span></span>
+                        <a href="javascript:" class="gotoindex"></a><a href="javascript:" class="btn-b"></a>
+                        <p><img src="images/p6-4-3.png" ></p>
+                        <p class="ewm"><img src="images/p6-4-4.png" ></p>
+                    </div>
+                    <span class="round-logo"></span>
+                    <span class="jizhe"><i></i></span>
+                </div>
+            </div>
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="plusign1"></span>
+            <span class="plusign2"></span>
+            <span class="plusign3"></span>
+        </div>
+        <!--$--1006*内容--$-->
+    </div>
+  </div>
+    <!--$--1100*内容--$-->
+
+    <img src="images/p6-4.png" >
+    <!-- logo CLOUD S-->
+    <span class="logo"></span>
+    <!-- logo CLOUD E -->
+    <!-- 音乐 -->
+    <div class="mute"><div class="mute-con"></div></div>
+    <div class="audio_container">
+      <audio id="music_bg" preload="auto" loop>
+        <source src="images/music.mp3">
+      </audio>
+    </div>
+    <!-- 音乐end -->
+    <!-- 弹出层 -->
+    <div class="black-bg" >
+      <div class="sharebox">
+        <span></span>
+      </div>
+      <span class="arr-top"></span>
+    </div>
+    <!-- 弹出层 end -->
+    <script>
+      // 控制页面缩放比
+         $(function(){
+             var ruturn_top = $(".return_top");
+             var ratio=$(window).height()/1206;
+            if(ratio<1){
+              $('.swiper-slide>div').css({webkitTransformOrigin:'center center',webkitTransform:'scale('+ratio+')'});
+              $('.page_1>div').css({webkitTransformOrigin:'center top',webkitTransform:'scale('+ratio+')'})
+            }
+          });
+         // page4 爱卡小屋swiper
+         var focusSwiper = new Swiper('.focusSwipe', {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              loop:true
+        });
+      // 点击出弹出层js
+      $(function(){
+          $(".btn-b").click(function(event){
+              var e=window.event || event;
+              if(e.stopPropagation){
+                  e.stopPropagation();
+              }else{
+                  e.cancelBubble = true;
+              }   
+              $(".black-bg").show();
+              $(".arr-top").addClass('jump');
+          });
+          $(".black-bg").click(function(event){
+              var e=window.event || event;
+              if(e.stopPropagation){
+                  e.stopPropagation();
+              }else{
+                  e.cancelBubble = true;
+              }
+          });
+         $(document).on("touchstart",function(){
+              $(".black-bg").hide();
+          })
+      })
+      // 控制音乐on off
+      function isIos(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("iPhone","iPad");
+        var flag = false;
+        for (var v = 0; v < Agents.length; v++) {
+          if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }
+        }
+        return flag;
+      }
+      function XAudio(name) {
+        XAudio.audioLoading++;
+        var audio = document.getElementById(name);
+        var that=this;
+        var fixedBug = isIos();
+        if(fixedBug){
+          audio = new Audio();
+          audio.src = $("#"+name+" source").attr("src");
+          audio.loop = true;
+          $("#"+name).remove();
+        }
+        audio.addEventListener("canplaythrough", function () {
+          that.ready = true;
+          XAudio.audioLoading--;
+          if (XAudio.audioLoading == 0) {// All files are preloaded
+            $('body').addClass('audio-ready');
+          }
+        }, false);
+        this.audio = audio;
+        this.ready = false;
+      }
+      XAudio.audioLoading=0;
+      XAudio.prototype={
+        'play':function() {
+          if (!this.muted) {
+            this.audio.play();
+          }
+        },
+        'pause':function() {
+          this.audio.pause();
+        },
+        'stop':function() {
+          this.audio.pause();
+          this.audio.currentTime = 0;
+        },
+        'restart':function() {
+          if (this.audio.currentTime) {
+            this.audio.currentTime = 0;
+          }
+          if (!this.muted) {
+            this.audio.play();
+          }
+        },
+        'mute':function() {
+          this.audio.muted = true;
+          this.muted = true;
+        },
+        'unmute':function() {
+          this.audio.muted = false;
+          this.muted = false;
+        }
+      }
+      var audioMusic = new XAudio("music_bg");
+      audioMusic.play();
+
+      $('div.mute').on('touchend', function(ev) {
+        if ($(this).hasClass('muted')) {
+          audioMusic.unmute();
+          audioMusic.play();
+          $(this).removeClass('muted');
+        } else {
+          audioMusic.mute();
+          audioMusic.pause();
+          $(this).addClass('muted');
+        }
+      });
+      // 控制音乐on off end
+      </script>
+
+    <!-- 微信分享 -->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://a.xcar.com.cn/nxcar/dist/js/jxcar.js"></script>
+    <script src="http://a.xcar.com.cn/nxcar/dist/js/nshare.js?v1.1"></script>
+    <script src="http://a.xcar.com.cn/nxcar/dist/js/tshare.js?v1.1"></script>
+    <script>
+      /*
+       * 被动分享(右上角分享代码)
+       *
+       * */
+      var ns = window.nshare;    //被动分享数据修改 wx 和 xcarapp
+      ns.setdata({
+        title: "2017上海车展 爱卡汽车邀请函",
+        desc: "玩美生活 “亿”起出发",
+        url: "http://a.xcar.com.cn/huodong/201704/sh2017auto/",
+        pic: "images/share-150x150.jpg"
+      });
+    </script>
+    <!--$--1100*内容--$-->
+    <!-- 设计师：  制作：吴丽英 日期：20170406 -->
+  </body>
+  
+</html>

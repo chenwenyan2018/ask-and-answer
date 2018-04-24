@@ -1,0 +1,47 @@
+body,
+html {
+  position: relative;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  overflow: hidden;
+  width: 100%;
+}
+body,ul,li,p,div,span,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+}
+/* reset */
+*{margin:0; padding:0;}
+html, body {position: relative;height: 100%;}
+body{background:#fff; color:#000; font:normal 12px/18px "Tahoma","Arial","Microsoft YaHei","SimSun"; -webkit-font-smoothing:antialiased;margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size: 100%;}
+input, select, textarea{border:0; -webkit-appearance:none;}
+img{border:0;user-select:none}
+i, em, span, strong, img{font-style:normal; font-weight:normal; vertical-align:middle;}
+ul,ol,li{list-style-type:none;}
+table{border-collapse:collapse; border-spacing:0; border:0;}
+input,textarea,select{font-size:inherit; *font-size:100%; outline:none;}
+textarea{resize:none;}
+a{color:#000; text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:hover{text-decoration:underline;}
+p,ul,li,dl,dt,dd{margin:0; padding: 0}
+
+.swiper-container {
+  width: 750px;
+  height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
+}
+.swiper-slide>div {
+  height: 100%;
+  width: 100%
+}
